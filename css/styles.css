@@ -18,3 +18,16 @@ h1,h2,h3 {
 a {
     text-decoration: none;
 }
+
+section > h2 {
+    position: relative;
+}
+
+section > h2::before {
+    content: "^";
+    font-size: 1em;
+    color: #ccc;
+    position: absolute;
+    left: -30px;
+    top: 3px;
+}
