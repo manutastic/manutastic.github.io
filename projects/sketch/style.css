@@ -1,0 +1,127 @@
+  html {
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url(background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+*, html, body {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+body, html {
+  position: relative;
+  height: 100%;
+  top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(200,80%,80%);
+}
+
+.header-text {
+  font-size: 90px;
+  height: 300px;
+  line-height: 300px;
+  color: hsl(0,0%,90%);
+  font-weight: 900;
+}
+
+@media (max-width: 610px) {
+  .header-text{
+    font-size: 75px;
+    height: 200px;
+    line-height: 200px;
+  }
+}
+
+@media (max-width: 500px){
+  .header-text{
+    font-size: 45px;
+  }
+}
+
+.header-text a {
+    color: hsl(0,0%,90%);
+    font-weight: 100;
+}
+
+.note {
+  position: relative;
+  max-width: 500px;
+  padding: 30px 20px;
+  margin: 0em auto;
+  color: #555;
+  text-align: center;
+  background: linear-gradient(to bottom left, transparent 50%, hsl(0,0%,99%) 50%), linear-gradient(to right, hsl(0,0%,90%) 99.9%, transparent 99.9%), linear-gradient(to bottom, hsl(0,0%,92%), hsl(0,0%,90%) 5%, hsl(0,0%,90%) 99.9%, transparent 99.9%);
+  background-size: 20px 20px, 100% 100%, 100% 100%;
+  background-position: 100% 0%, -20px 0%, 100% 20px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  box-shadow: -2px 2px 5px rgba(0,0,0,0.07);
+  border-radius: 2px;
+  z-index: 5;
+}
+
+.small {
+  max-width: 420px;
+  z-index: 0;
+  background: hsl(0,0%,85%);
+}
+
+.note-title {
+  position: absolute;
+  top: .5em;
+  left: 1em;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -100px;
+  padding: 5px;
+}
+
+.wrapper:after{
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+.altTheme a {
+  color: hsl(200, 90%, 35%);
+}
+
+.comments {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footer {
+  display: table;
+width: 100%;
+height: 100px;
+  text-align: center;
+background: rgba(0, 0, 0, 0.3);
+}
+.footer h6 {
+  display: table-cell;
+  vertical-align: middle;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #666;
+}
