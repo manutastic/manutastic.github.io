@@ -27,9 +27,7 @@ section > h2 {
     position: relative;
 }
 
-section > h2::before {
-    content: "^";
-    font-size: 1em;
+section > h2 > a {
     color: #ccc;
     position: absolute;
     left: -30px;
