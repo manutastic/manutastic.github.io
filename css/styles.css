@@ -19,6 +19,10 @@ a {
     text-decoration: none;
 }
 
+section {
+    margin-top: 50px;
+}
+
 section > h2 {
     position: relative;
 }
@@ -30,4 +34,14 @@ section > h2::before {
     position: absolute;
     left: -30px;
     top: 3px;
+}
+
+.project h3 {
+    margin-bottom: 0;
+}
+
+.project h4 {
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0;
 }
