@@ -43,3 +43,7 @@ section > h2 > a {
     font-style: italic;
     margin-top: 0;
 }
+
+.project img {
+    width: 100%;
+}
