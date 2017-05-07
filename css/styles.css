@@ -2,8 +2,13 @@
     font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+*::selection {
+    background-color: royalblue;
+    color: white;
+}
+
 body {
-    margin:40px auto;
+    margin:120px auto;
     max-width:650px;
     line-height:1.6;
     font-size:18px;
