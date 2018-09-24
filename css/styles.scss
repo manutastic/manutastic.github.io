@@ -28,16 +28,17 @@ $white: #fff;
 
 html {
     background: $background-color;
+    overflow-x: hidden;
 }
 
 body {
     position: relative;
-    margin: 60px auto 0;
+    margin: 0 auto;
     max-width:760px;
     line-height:1.6;
     font-size:16px;
     color: $dark-text;
-    padding: 0 10px;
+    padding: 60px 10px 0;
     overflow-x: hidden;
 }
 
