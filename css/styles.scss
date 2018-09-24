@@ -8,6 +8,14 @@ $light-text: #818181;
 $background-color: hsla(45, 20%, 98%, 1);
 $white: #fff;
 
+@font-face {
+    font-family: 'Sailec Bold';
+    font-display: swap;
+    src: url('/fonts/Sailec-Bold.woff2') format('woff2'),
+         url('/fonts/Sailec-Bold.woff') format('woff'),
+         url('/fonts/Sailec-Bold.ttf') format('truetype');
+}
+
 
 * {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -34,7 +42,7 @@ body {
 }
 
 h1 {
-    font-family: Sailec, Futura, "Trebuchet MS", Arial, sans-serif;
+    font-family: "Sailec Bold", Futura, "Trebuchet MS", Arial, sans-serif;
 }
 
 h1,h2,h3 {
@@ -45,7 +53,7 @@ header {
     margin-bottom: 100px;
     h1 {
         margin-bottom: 0;
-        font-family: Sailec, Futura, "Trebuchet MS", Arial, sans-serif;
+        font-family: "Sailec Bold", Futura, "Trebuchet MS", Arial, sans-serif;
         text-transform: uppercase;
     }
 }
@@ -125,7 +133,7 @@ nav {
 #about {
     margin-bottom: 100px;
     h2 {
-        font-family: Sailec, Futura, "Trebuchet MS", Arial, sans-serif;
+        font-family: "Sailec Bold", Futura, "Trebuchet MS", Arial, sans-serif;
         font-size: 1.8em;
     }
     p {
@@ -195,6 +203,24 @@ section {
     margin-top: 50px;
     h2 {
         position: relative;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0px 3px 4px rgba(50,50,93,.1);
+    border-radius: 5px;
+    position: relative;
+    &#about{
+        margin-bottom: 0;
+        margin-top: -30px;
+        p {
+            font-size: 1.1em;
+        }
+        h3 {
+               margin: 2em 0 -.5em;
+        }
     }
 }
 
